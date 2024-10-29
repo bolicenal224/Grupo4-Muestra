@@ -8,21 +8,38 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #ffffff;
-    background-image: url("./Imagenes/FOTO1.png");
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+    ), url("./Imagenes/FOTO1.png");
+    /*background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;*/
 }
 
 .logo {
-    margin-top: 19%;
+    height: auto;
     cursor: pointer;
 }
 
+.containerFa {
+    display: flex;
+    width: 100%;
+}
+
 .header {
-    background-color: #100b9b;
+    background-color: #1f4675;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 85px;
     padding: 5px 10%;
+}
+
+nav {
+    margin-bottom: 3%;
 }
 
 .navbar ul {
@@ -43,7 +60,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: #006eff;
+    background-color: #102c4f;
     border-radius: 5px;
 }
 
@@ -75,9 +92,10 @@ h1 {
 }
 
 .animation {
-    background: linear-gradient(to right, rgb(22, 137, 231), rgb(32, 82, 247), rgb(8, 31, 105));
+    background:#293e70 ;
+    border: solid 3px #30767e;
     color: #ffffff;
-    border-radius: 5px;
+    border-radius: 15px;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -95,7 +113,7 @@ h1 {
 
 .separar {
     display: flex;
-    margin-left: 5%;
+    margin-left: 3%;
     width: 60%;
 }
 
@@ -107,7 +125,7 @@ h1 {
 .containter {
     display: flex;
     flex-direction: column;
-    width: 100%;    
+    width: 100%;
     height: auto;
     gap: 50px;
 }
@@ -121,4 +139,28 @@ h1 {
 
 .contDeInfo > div {
     width: 80%;
+}
+
+.separar3 {
+    display: flex;
+    margin-left: 35%;
+}
+
+.scard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 65%;
+    background-color: rgba(0, 13, 129, 0.562);
+    height: auto;
+    border-radius: 50px;
+}
+
+.contentscard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
